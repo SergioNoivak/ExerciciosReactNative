@@ -7,10 +7,20 @@ import Contador from "./Contador";
 import Plataformas from "./Plataformas";
 import Evento from "./Evento";
 import {Avo} from "./ComunicaçãoDireta"
-
+import ListaFlex from './ListaFlex'
 import {TextoSincronizado} from './ComunicaçãoIndireta'
+import Flex from './Flex'
 export default createDrawerNavigator(
   {
+    Flex:{
+      screen:Flex
+    },
+    ListaFlex:{
+      screen:ListaFlex,
+      navigationOptions: {title: 'Lista Flex'},
+
+    },
+
     TextoSincronizado:{
       screen:()=><TextoSincronizado></TextoSincronizado>
     },
